@@ -13,7 +13,28 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@atoms": ["./src/core/components/atoms/index"],
+      "@layouts": ["./src/core/components/layouts/index"],
+      "@molecules": ["./src/core/components/molecules/index"],
+      "@organisms": ["./src/core/components/organisms/index"],
+      "@constants/*": ["./src/core/constants/*"],
+      "@data/*": ["./src/core/data/*"],
+      "@guards": ["./src/core/guards/index"],
+      "@hooks": ["./src/core/hooks/index"],
+      "@interfaces/*": ["./src/core/interfaces/*"],
+      "@libs/*": ["./src/core/libs/*"],
+      "@providers": ["./src/core/providers/index"],
+      "@services": ["./src/core/services/index"],
+      "@store": ["./src/core/store/index"],
+      "@slices/*": ["./src/core/store/slices/*"],
+      "@types/*": ["./src/core/types/*"],
+      "@utils/*": ["./src/core/utils/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@styles/*": ["./src/styles/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
